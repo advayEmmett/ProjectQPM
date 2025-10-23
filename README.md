@@ -114,4 +114,4 @@ If you’re a developer, educator, or student with ideas to improve it, feel fre
 
 ### 📚 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** — see the [LICENSE](https://github.com/advayEmmett/ProjectQPM/blob/main/LICENSE.md) file for details.
