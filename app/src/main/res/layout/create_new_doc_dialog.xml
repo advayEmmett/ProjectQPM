@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="homePage.MainHomePage">
+
+    <LinearLayout
+        android:id="@+id/create_newDoc_dialogBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="HardcodedText">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Enter Details"
+            android:textColor="@color/black"
+
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="School"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/schoolACTV_newDocDialog"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:completionThreshold="1"
+            android:dropDownHeight="wrap_content"
+            android:hint="Enter School Name"
+            android:inputType="textAutoComplete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Exam Name"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/examACTV_newDocDialog"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:completionThreshold="1"
+            android:dropDownHeight="wrap_content"
+            android:hint="Enter Exam Name"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Subject for Exam"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/subjectACTV_newDocDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:completionThreshold="1"
+            android:dropDownHeight="wrap_content"
+            android:hint="Enter Subject Name"
+            android:inputType="text" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Date of Exam"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/chooseDateExam"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/light_grey"
+            android:text="Choose Date"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <DatePicker
+            android:id="@+id/date_picker_examDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:adSize="BANNER"
+            app:adUnitId="@string/ADMOB_AD_UNIT_ID" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Total Marks"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/marksACTV_newDocDialog"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:completionThreshold="1"
+            android:dropDownHeight="wrap_content"
+            android:hint="Enter Total Marks"
+            android:inputType="number"
+            android:maxLength="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Class"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/classACTV_newDocDialog"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:completionThreshold="1"
+            android:dropDownHeight="wrap_content"
+            android:hint="Enter Class"
+            android:inputType="text"
+            android:maxLength="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Total Duration"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/durationACTV_newDocDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:autofillHints=""
+            android:completionThreshold="1"
+            android:dropDownHeight="wrap_content"
+            android:hint="Enter Duration in Hours"
+            android:inputType="numberDecimal"
+            android:maxLength="1" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:adSize="BANNER"
+            app:adUnitId="@string/ADMOB_AD_UNIT_ID" />
+
+    </LinearLayout>
+</ScrollView>

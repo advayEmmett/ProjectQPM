@@ -1,0 +1,6 @@
+build
+.gradle
+src/androidTest
+src/test
+src/main/res/values/strings.xml
+src/main/res/values-night/strings.xml
